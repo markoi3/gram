@@ -1,16 +1,13 @@
-<div class="posts-wrapper row">
+<div class="posts-wrapper">
   <% @posts.each do |post| %>
     <div class="post">
       <div class="post-head">
         <div class="name">
-          Robert Downey Jr.
+          Ben Walker
         </div>
       </div>
-      <div class="image center-block">
-        
-       <%= link_to (image_tag post.image.url(:medium), class:'img-responsive'), post_path(post) %>
-
-
+      <div class="image">
+        <%= link_to (image_tag post.image.url(:medium)), post_path(post) %>
       </div>
       <p class="caption">
         <%= post.caption %>
@@ -18,6 +15,5 @@
     </div>
   <% end %>
 </div>
-
 
     
