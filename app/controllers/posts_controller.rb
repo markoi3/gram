@@ -14,11 +14,10 @@ class PostsController < ApplicationController
 
   def create
     if @post = Post.create(post_params)
-      flash[:success] = "Your post has been created!"
       redirect_to posts_path
     else
+      redirect_to new_post_path
       flash[:alert] = "Your new post couldn't be created!  Please check the form."
-      render :new
     end
   end
 
