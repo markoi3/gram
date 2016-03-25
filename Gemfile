@@ -50,3 +50,8 @@ gem 'simple_form'
 gem "paperclip", "~> 4.3"
 gem 'devise'
 gem "font-awesome-rails"
+gem 'kaminari', '~> 0.16.3' 
+gem 'jquery-turbolinks'
+gem 'sprockets', '~> 3.5', '>= 3.5.2'
+gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.3.1'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'

@@ -3,33 +3,49 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+html {
+  height: 100%;
+}
 
 body {
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(cornflowerblue, violet); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(cornflowerblue, violet); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(cornflowerblue, violet); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(cornflowerblue, violet); /* Standard syntax */
+  height: 100%;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, cornflowerblue , violet); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, cornflowerblue , violet); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, cornflowerblue , violet); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, cornflowerblue , violet); /* Standard syntax */
+  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.alert {
+  margin-bottom: 0px;
+}
+
+/* ## NAVBAR CUSTOMISATIONS ## */
+
+.navbar {
+  margin-bottom: 0px;
 }
 
 .navbar-brand {
   a {
-    color: #EEC425;
+    color: #125688;
   }
 }
 
 .navbar-default {
   background-color: #fff;
-  height: 54px;
   .navbar-nav li a {
     color: #125688;
   }
 }
 
 .navbar-container {
-  width: 640px;
+  max-width: 640px;
   margin: 0 auto;
 }
+
+/* ## POST CUSTOMISATIONS ## */
 
 .posts-wrapper {
   padding-top: 40px;
@@ -45,71 +61,59 @@ body {
   border-radius: 3px;
   border-width: 1px;
   margin-bottom: 60px;
-}
-
-.post-head {
-  flex-direction: row;
-  height: 64px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 24px;
-  color: #1A1739;
-  font-size: 15px;
-  line-height: 18px;
-  .user-name, .time-ago {
-    display: inline;
+  .post-head {
+    flex-direction: row;
+    height: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    color: #125688;
+    font-size: 15px;
+    line-height: 18px;
+    .user-name, .time-ago {
+      display: inline;
+    }
+    .user-name {
+      font-weight: 500;
+    }
+    .time-ago {
+      color: #A5A7AA;
+      float: right;
+    }
   }
-  .thumb-image {}
-  .user-name {
-    font-weight: 500;
+  .image {
+    border-bottom: 1px solid #eeefef;
+    border-top: 1px solid #eeefef;
   }
-  .time-ago {
-    color: #A5A7AA;
-    float: right;
-  }
-}
-
-.image {
-  border-bottom: 1px solid #eeefef;
-  border-top: 1px solid #eeefef;
-}
-
-.user-name {
-  color: #125688;
-  font-size: 15px;
-}
-
-.user-name, .comment-content {
-  display: inline;
-}
-
-.form-wrapper {
-  width: 60%;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 40px;
-  border: 1px solid #eeefef;
-  border-radius: 3px;
-}
-
-.edit-links {
-  margin-top: 20px;
-  margin-bottom: 40px;
 }
 
 .post-bottom {
+  .user-name, .comment-content {
+    display: inline;
+  }
   .caption {
     margin-bottom: 7px;
   }
   .user-name {
     font-weight: 500;
     margin-right: 0.3em;
-  }
-  .caption-content {
-    margin-bottom: 7px;
+    color: #125688;
+    font-size: 15px;
   }
   .user-name, .caption-content {
     display: inline;
+  }
+  #comment {
+    word-wrap: break-word;
+    margin-top: 7px;
+    .user-name {
+      font-weight: 500;
+      margin-right: 0.3em;
+    }
+    .delete-comment {
+      float: right;
+      color: #515151;
+    }
   }
   margin-bottom: 7px;
   padding-top: 24px;
@@ -118,6 +122,14 @@ body {
   padding-bottom: 10px;
   font-size: 15px;
   line-height: 18px;
+}
+
+.comment_content {
+  font-size: 15px;
+  line-height: 18px;
+  border: medium none;
+  width: 100%;
+  color: #4B4F54;
 }
 
 .comment-like-form {
@@ -132,26 +144,84 @@ body {
   justify-content: center;
 }
 
-.comment {
-  margin-bottom: 7px;
-  .user-name {
-    font-weight: 500;
-    margin-right: 0.3em;
+/* ## Wrapper and styling for the new, edit & devise views ## */
+
+.edit-links {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.registration-bg {
+  padding-top: 4em;
+  height: 100%;
+  background: image-url("pasa.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.registration-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.login-bg {
+  padding-top: 10em;
+  height: 100%;
+  background: image-url("rihanna.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.login-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+
+.log-in{
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  border: none;
+}
+
+.panel {
+  border-radius: 8px;
+}
+
+.panel-heading{
+  h1 {
+    text-align: center;
   }
 }
 
-.comment-form {
-  flex-grow: 1;
+#image-preview {
+  margin: 0px auto;
 }
 
-#comment_content {
-  font-size: 15px;
-  line-height: 18px;
-  border: medium none;
-  width: 100%;
-  color: #4B4F54;
+#post_image {
+  padding: 1em;
+  margin: 0px auto;
 }
 
-.delete-comment {
-  float: right;
-}
+.black-background {background-color:#963CD0;}
+.white {color:#ffffff;}
+
+.follow {
+  font-weight: 500;
+    margin-right: 0.3em;
+    color: #fff;
+    font-size: 15px;
+  }
