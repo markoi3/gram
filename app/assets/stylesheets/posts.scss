@@ -225,3 +225,35 @@ body {
     color: #fff;
     font-size: 15px;
   }
+  
+.pass-bg {
+  padding-top: 10em;
+  height: 100%;
+  background: image-url("weeknd.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.pass-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+a:link { 
+  color: #333333;
+}
+a:visited { 
+  color: #F8ED11;
+}
+a:hover { 
+  color: #CCCCCC;
+}
+a:active { 
+  color: #333333;
+}
