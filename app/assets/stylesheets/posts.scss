@@ -257,3 +257,59 @@ a:hover {
 a:active { 
   color: #333333;
 }
+
+#user_avatar {
+  margin: 20px auto;
+}
+
+.profile-header {
+  padding: 20px 0;
+}
+
+.profile-image {
+  margin: 20px auto;
+  height: 152px;
+  width: 152px;
+}
+
+.user-name-and-follow {
+  display: inline;
+}
+
+.profile-user-name {
+  display: inline;
+  color: #FFFFFF;
+}
+
+.edit-button {
+  border-color: #818488;
+  color: #818488;
+  margin-left: 20px;
+}
+
+.profile-bio {
+  margin-top: 20px;
+  color: #FFFFFF;
+}
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-primary.outline {
+    border: 2px solid #FEE256;
+    color: #FEE256;
+}
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #ffffff;
+    color: #ffffff;
+    box-shadow: none;
+}
+
+.user-statistics {
+  color: #FFFFFF;
+}

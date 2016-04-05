@@ -55,3 +55,5 @@ gem 'jquery-turbolinks'
 gem 'sprockets', '~> 3.5', '>= 3.5.2'
 gem 'autoprefixer-rails', '~> 6.3', '>= 6.3.3.1'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem "paperclip-ffmpeg", "~> 1.0.1"
+gem 'paperclip-av-transcoder'
