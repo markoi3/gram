@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  match '/posts',      to: 'posts#index',        via: 'get'
+  
   get 'profiles/show'
 
   devise_for :users, :controllers => { registrations: 'registrations' }
